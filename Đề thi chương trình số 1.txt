@@ -1,0 +1,375 @@
+================================================================================
+                                   ĐỀ THI_01
+================================================================================
+
+Câu 1. (2,0 điểm)
+a. Hãy viết hàm đếm xem số nguyên dương n có bao nhiêu chữ số?
+   Ví dụ: n = 2025 thì kết quả là 4.
+b. Cho biểu thức S(n,x) = sqrt(x + sqrt(x + ... + sqrt(x + sqrt(x)))) với n là số nguyên dương và x là số thực; n là số lượng dấu căn bậc hai có trong biểu thức. Hãy viết hàm tính giá trị biểu thức S(n,x).
+   Ví dụ: n = 5 và x = 2 thì kết quả là 1.99759
+
+Câu 2. (2,0 điểm)
+Cho mảng một chiều a chứa n số nguyên dương a[0], a[1], ..., a[n-1] (n < 10000). Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập mảng a.
+b. Tìm giá trị lớn nhất của mảng a.
+c. Đếm xem trong mảng có bao nhiêu cặp số a[i], a[j] mà i < j và a[i] + a[j] = s với s là một số nguyên.
+   Ví dụ: n = 8; dãy số: 8 9 23 101 8 120 2 1
+   - Kết quả câu b: 120
+   - Kết quả câu c: với s = 10 thì kết quả là 3
+
+Câu 3. (2,0 điểm)
+Cho hai số phức z và w trong đó z = a + bi, w = c + di (a, b là phần thực, phần ảo của z; c, d là phần thực, phần ảo của w).
+- Tổng: z + w = (a + c) + (b + d)i
+- Hiệu: z - w = (a - c) + (b - d)i
+- Độ lớn (môđun): |z| = sqrt(a^2 + b^2)
+Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập hai số phức z và w.
+b. Tính z + w.
+c. Tính z - w.
+d. Tính độ lớn của các số phức z, w.
+   Ví dụ: z = 3 + 4i; w = 8 - 6i
+   - Kết quả câu b: 11 - 2i
+   - Kết quả câu c: -5 + 10i
+   - Kết quả câu d: 5 10
+
+Câu 4. (2,0 điểm)
+Cho chuỗi s chứa các ký tự chữ cái và ký tự khoảng trắng; giả thiết đầu chuỗi s và cuối chuỗi s không có ký tự khoảng trắng, giữa các từ của chuỗi có một ký tự khoảng trắng. Hãy viết chương trình thực hiện các công việc sau:
+a. Đếm số lượng từ của chuỗi s.
+b. Đếm số lượng ký tự của mỗi từ.
+   Ví dụ: Chuỗi s là "ChatGPT is an artificial intelligence powered conversational agent developed by OpenAI"
+   - Kết quả câu a: 11
+   - Kết quả câu b: 7 2 2 10 12 7 14 5 9 2 6
+
+Câu 5. (2,0 điểm)
+Cho file văn bản num_input.txt có cấu trúc như sau:
+- Dòng đầu chứa một số nguyên dương n.
+- Trong các dòng tiếp theo tổng cộng chứa n số nguyên a[0], a[1], ..., a[n-1].
+Hãy viết chương trình thực hiện các công việc sau:
+a. Đọc dữ liệu từ file num_input.txt và lưu vào biến n và dãy n số nguyên a[0], ..., a[n-1].
+b. Tính tổng các số của dãy.
+c. Ghi kết quả tìm được của câu b vào file văn bản num_output.txt.
+   Ví dụ:
+   [num_input.txt]
+   10
+   7 10 8 9
+   12 5
+   13 4 2
+   9
+   [num_output.txt]
+   79
+
+
+================================================================================
+                                   ĐỀ THI_02
+================================================================================
+
+Câu 1. (2,0 điểm)
+a. Cho một số nguyên dương n, hãy viết hàm tính tổng các chữ số của n.
+   Ví dụ: n = 2025 thì hàm trả về giá trị 9.
+b. Cho số nguyên dương n, hãy viết hàm kiểm tra xem n có phải là số nguyên tố hay không? Nếu n là số nguyên tố thì hàm trả về giá trị 1, nếu n không phải là số nguyên tố thì hàm trả về giá trị 0.
+
+Câu 2. (2,0 điểm)
+Cho mảng hai chiều a chứa m dòng n cột các số nguyên; trong đó vị trí dòng, cột bắt đầu từ 0. Hãy viết chương trình thực hiện các công việc sau:
+a. Tính tổng các phần tử của mảng a.
+b. Tính tổng các phần tử trên từng dòng của mảng a.
+c. Tính tổng các phần tử trên từng cột của mảng a.
+   Ví dụ: m = 3, n = 4
+   14 12  7 16
+   16 21  9  8
+   11  4 13 18
+   - Kết quả câu a: 149
+   - Kết quả câu b: 53 50 46
+   - Kết quả câu c: 37 32 38 42
+
+Câu 3. (2,0 điểm)
+Cho dãy n hình chữ nhật R[0], R[1], ..., R[n-1] trong đó mỗi hình chữ nhật biết chiều dài và chiều rộng là các số nguyên dương.
+Cấu trúc mỗi hình chữ nhật được định nghĩa:
+struct rectangle {
+    int length;
+    int width;
+};
+Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập n, nhập chiều dài và chiều rộng của mỗi hình chữ nhật R[i] với i = 0..n-1.
+b. Tính tổng diện tích của n hình chữ nhật trên.
+   Ví dụ: n = 7
+   8 9
+   6 4
+   12 5
+   18 12
+   10 5
+   3 2
+   11 4
+   - Kết quả câu b: 472
+
+Câu 4. (2,0 điểm)
+Cho chuỗi s chứa các ký tự chữ cái và ký tự khoảng trắng; giả thiết đầu chuỗi s và cuối chuỗi s không có ký tự khoảng trắng, giữa các từ của chuỗi s có đúng một ký tự khoảng trắng. Hãy viết chương trình thực hiện các công việc sau:
+a. Đếm số lượng ký tự mỗi từ.
+b. Tách một từ bên phải của chuỗi.
+   Ví dụ: Chuỗi s là "The Python programming language is easy to learn and deploy applications"
+   - Kết quả câu a: 3 6 11 8 2 4 2 5 3 6 12
+   - Kết quả câu b: applications
+
+Câu 5. (2,0 điểm)
+Cho một file văn bản num_inp.txt có cấu trúc như sau:
+- Dòng đầu ghi số n.
+- Dòng tiếp theo ghi n số nguyên a[0], a[1], ..., a[n-1] các số cách nhau ít nhất một khoảng trắng.
+Hãy viết chương trình thực hiện các công việc sau:
+a. Đọc dữ liệu từ file num_inp.txt và lưu vào biến n và dãy n số nguyên a[0], a[1], ..., a[n-1].
+b. Tìm giá trị nhỏ nhất của dãy số a[0], a[1], ..., a[n-1].
+c. Ghi kết quả tìm được của câu b vào file văn bản num_output.txt.
+   Ví dụ:
+   [num_inp.txt]
+   8
+   14 23 22 24 6 12 45 15
+   [num_out.txt]
+   6
+
+
+================================================================================
+                                   ĐỀ THI_03
+================================================================================
+
+Câu 1. (2,0 điểm)
+Cho mảng hai chiều a gồm m dòng n cột, mỗi phần tử của mảng là một số nguyên dương; trong đó chỉ số dòng, chỉ số cột bắt đầu từ 0. Hãy thực hiện các công việc sau:
+a. Viết hàm nhập số dòng m, số cột n và các phần tử của mảng a.
+   Gợi ý thiết kế hàm: void input_array(int a[maxm][maxn], int &m, int &n)
+   Viết hàm xuất mảng a.
+   Gợi ý thiết kế hàm: void output_array(int a[maxm][maxn], int m, int n)
+b. Viết hàm đếm xem mảng a chứa bao nhiêu số nguyên tố?
+   Gợi ý thiết kế hàm: int count_prime(int a[maxm][maxn], int m, int n)
+c. Viết hàm tính tổng các phần tử trên từng dòng của mảng a.
+   Gợi ý thiết kế hàm: void sum_row(int a[maxm][maxn], int m, int n)
+d. Viết hàm tìm giá trị lớn nhất của các số trên từng dòng; sau đó tìm giá trị nhỏ nhất trong số các giá trị lớn nhất vừa tìm được.
+   Gợi ý thiết kế hàm: int min_max_row(int a[maxm][maxn], int m, int n)
+e. Viết hàm int main() để gọi thực hiện các hàm trên.
+   Ví dụ: m = 4, n = 6
+   10 29 20 21 15 26
+    3 24 12 28 13  2
+   27 22 19 30  9 23
+   10 18 16 22 101 27
+   - Kết quả câu b: 7
+   - Kết quả câu c: 121 82 130 194
+   - Kết quả câu d: 28
+
+Câu 2. (2,0 điểm)
+Cho dãy n phân số f[0], f[1], ..., f[n-1] trong đó tử số và mẫu số là các số nguyên dương.
+Cấu trúc mỗi phân số được định nghĩa:
+struct fraction {
+    int numerator;
+    int denominator;
+};
+Hãy viết chương trình hoàn chỉnh thực hiện các công việc sau:
+a. Nhập n; nhập tử số, mẫu số của mỗi phân số f[i] với i = 0..n-1.
+b. Xuất dãy phân số f[i] với i = 0..n-1.
+c. Đếm xem dãy n phân số trên có bao nhiêu phân số tối giản?
+d. Sắp xếp dãy n phân số trên theo chiều tăng dần.
+   Ví dụ: n = 7
+   Dữ liệu vào: 3/7 2/5 17/6 6/4 16/21 6/8 17/68
+   - Kết quả câu b: 3/7 2/5 17/6 6/4 16/21 6/8 17/68
+   - Kết quả câu c: 4
+   - Kết quả câu d: 17/68 2/5 3/7 6/8 16/21 6/4 17/6
+
+Câu 3. (2,0 điểm)
+Cho chuỗi s chứa các ký tự chữ cái và ký tự khoảng trắng (giả thiết đầu chuỗi và cuối chuỗi không có ký tự khoảng trắng, giữa các từ của chuỗi có một ký tự khoảng trắng). Viết các hàm thực hiện các công việc sau:
+a. Đếm số lượng ký tự mỗi từ.
+b. Tìm một từ có nhiều ký tự nhất.
+   Ví dụ: Chuỗi s là "ChatGPT provides excellent support for research as well as many other tasks"
+   - Kết quả câu a: 7 8 9 7 3 8 2 4 2 4 5 5
+   - Kết quả câu b: excellent
+
+Câu 4. (2,0 điểm)
+Cho file văn bản num_input.txt có cấu trúc như sau:
+- Dòng đầu chứa số nguyên dương n.
+- Trong các dòng tiếp theo tổng cộng chứa n số nguyên a[0], a[1], ..., a[n-1].
+Viết chương trình hoàn chỉnh thực hiện các công việc sau:
+a. Đọc dữ liệu từ file num_input.txt và lưu vào các biến n và dãy n số nguyên a[0], a[1], ..., a[n-1].
+b. Đếm xem dãy a[0], a[1], ..., a[n-1] chứa bao nhiêu số nguyên tố?
+c. Hãy sắp xếp các phần tử của dãy a[0], a[1], ..., a[n-1] theo thứ tự tăng dần.
+d. Ghi kết quả tìm được của câu b, câu c vào file văn bản num_output.txt; trong đó mỗi dòng ghi kết quả của mỗi câu tương ứng.
+   Ví dụ:
+   [num_input.txt]
+   10
+   7 10 8 9
+   12 5
+   13 4 2
+   9
+   [num_output.txt]
+   4
+   2 4 5 7 8 9 9 10 12 13
+
+Câu 5. (2,0 điểm)
+Cho file văn bản str_input.txt, mỗi dòng của file chứa một chuỗi; chiều dài tối đa của mỗi chuỗi là 512 ký tự (giả thiết đầu chuỗi và cuối chuỗi không có ký tự khoảng trắng, giữa các từ của chuỗi có một ký tự khoảng trắng). Viết chương trình hoàn chỉnh thực hiện các công việc sau:
+a. Tìm từ bên phải của mỗi chuỗi trong file str_input.txt.
+b. Tìm một chuỗi có nhiều ký tự nhất trong file str_input.txt.
+Ghi kết quả tìm được vào file văn bản str_output.txt; mỗi dòng ghi một chuỗi tìm được.
+   Ví dụ:
+   [str_input.txt]
+   Aleksandr Sergeyevich Pushkin
+   Lev Nikolayevich Tolstoy
+   Charles John Huffam Dickens
+   William Shakespeare
+   [str_output.txt]
+   Pushkin
+   Tolstoy
+   Dickens
+   Shakespeare
+   Aleksandr Sergeyevich Pushkin
+
+
+================================================================================
+                                   ĐỀ THI_04
+================================================================================
+
+Câu 1. (2,0 điểm)
+a. Cho số nguyên dương n. Viết hàm tìm số nguyên tố thứ n.
+   Ví dụ: n = 7 thì kết quả là 17 (dãy các số nguyên tố: 2, 3, 5, 7, 11, 13, 17, 19, 23,...)
+b. Dãy số Pell P[n] được định nghĩa như sau: P[0] = 0, P[1] = 1, P[n] = 2 * P[n-1] + P[n-2] với n > 1. Hãy viết hàm tìm k + 1 số hạng đầu tiên của dãy số Pell.
+   Ví dụ: khi k = 7 thì kết quả câu b là: 0 1 2 5 12 29 70 169
+
+Câu 2. (2,0 điểm)
+Cho mảng một chiều a chứa n số nguyên dương a[0], a[1], ..., a[n-1] (n < 10000). Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập mảng a.
+b. Tìm giá trị lớn nhất của mảng a.
+c. Tính tổng các chữ số của tất cả các số trong mảng a.
+d. Đếm xem trong mảng có bao nhiêu cặp số a[i], a[j] mà i < j và a[i] + a[j] = s với s là một số nguyên.
+   Ví dụ: n = 8; dãy số: 10 11 25 103 10 122 4 3
+   - Kết quả câu b: 122
+   - Kết quả câu c: 27
+   - Kết quả câu d: với s = 14 thì kết quả là 3
+
+Câu 3. (2,0 điểm)
+Trong mặt phẳng tọa độ Oxy, cho dãy n tam giác T[0], T[1], ..., T[n-1], mỗi tam giác biết tọa độ của ba đỉnh; hoành độ, tung độ các đỉnh của tam giác là các số nguyên.
+- Khoảng cách giữa hai điểm A(xa, ya) và B(xb, yb): AB = sqrt((xb - xa)^2 + (yb - ya)^2)
+- Diện tích tam giác có độ dài 3 cạnh a, b, c (Heron): S = sqrt(p * (p - a) * (p - b) * (p - c)) với p = (a + b + c) / 2
+Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập số nguyên dương n, nhập tọa độ các đỉnh của mỗi tam giác T[i] với i = 0..n-1.
+b. Đếm xem trong dãy n tam giác trên có bao nhiêu tam giác mà cả ba đỉnh của nó đều thuộc về góc phần tư thứ nhất (hoành độ > 0 và tung độ > 0).
+c. Tính tổng diện tích của n tam giác trên.
+   Ví dụ: n = 5
+   -4 -1 -3 -3 -2 -1
+    2  1  4  3  5  1
+   -1  4  0  1  1  4
+    2 -5  2 -3  3 -5
+    4  5  7  7  9  5
+   - Kết quả câu b: 2
+   - Kết quả câu c: 14.0
+
+Câu 4. (2,0 điểm)
+Cho một chuỗi s chứa các ký tự chữ cái và ký tự khoảng trắng; giả thiết đầu chuỗi s và cuối chuỗi s không có ký tự khoảng trắng, giữa các từ của chuỗi s có một ký tự khoảng trắng. Hãy thực hiện các công việc sau:
+a. Tìm chuỗi chứa một từ bên trái của chuỗi s (tức tìm từ đầu tiên của chuỗi s).
+b. Tìm một từ trong chuỗi s có chiều dài dài nhất.
+   Ví dụ: Chuỗi s là "ChatGPT provides excellent support for research as well as many other tasks"
+   - Kết quả câu a: ChatGPT
+   - Kết quả câu b: excellent
+
+Câu 5. (2,0 điểm)
+Cho tập tin văn bản table.txt có cấu trúc như sau:
+- Dòng đầu ghi hai số nguyên dương m, n;
+- Trong m dòng tiếp theo mỗi dòng ghi n số nguyên có giá trị từ 1 đến 6.
+Hãy viết chương trình thực hiện các công việc sau:
+a. Đọc tập tin văn bản trên ra mảng hai chiều a có m dòng n cột; trong đó chỉ số dòng từ 1 đến m, chỉ số cột từ 1 đến n.
+b. Tìm giá trị trung bình cộng các số trong bảng số.
+c. Đếm xem trong bảng số có bao nhiêu hình vuông 2x2 chứa các số có cùng giá trị (a[i][j], a[i][j+1], a[i+1][j], a[i+1][j+1]).
+d. Hãy đếm xem mỗi giá trị trong bảng số xuất hiện bao nhiêu lần?
+Ghi kết quả vào file result.txt:
+- Dòng 1: số thực (2 chữ số thập phân) kết quả câu b.
+- Dòng 2: số nguyên kết quả câu c.
+- Dòng 3: 6 số nguyên là tần số xuất hiện của các giá trị 1, 2, 3, 4, 5, 6.
+   Ví dụ:
+   [table.txt]
+   5 7
+   1 5 1 2 2 3 5
+   1 5 2 2 2 3 3
+   1 3 3 1 3 3 3
+   6 3 6 6 6 3 1
+   4 4 6 6 6 4 4
+   [result.txt]
+   3.40
+   4
+   6 5 10 4 3 7
+
+
+================================================================================
+                                   ĐỀ THI_05
+================================================================================
+
+Câu 1. (2,0 điểm)
+Cho mảng một chiều chứa n số nguyên a[0], a[1], ..., a[n-1]. Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập mảng, xuất mảng.
+b. Tìm giá trị lớn nhất của mảng.
+c. Sắp xếp các phần tử của mảng theo chiều tăng dần.
+d. Đếm xem mảng này có bao nhiêu số a[i] mà tồn tại cặp số a[j], a[k] sao cho a[j] + a[k] = a[i] với i != j, i != k, j != k (0 <= i, j, k < n).
+   Ví dụ: mảng gồm 7 số: 5 4 1 -6 1 3 2 thì kết quả bằng 4.
+
+Câu 2. (2,0 điểm)
+Trong mặt phẳng tọa độ Oxy, cho dãy n tam giác T[0], T[1], ..., T[n-1], mỗi tam giác biết tọa độ của ba đỉnh; hoành độ, tung độ các đỉnh của tam giác là các số nguyên.
+- Khoảng cách giữa hai điểm A(xa, ya) và B(xb, yb): AB = sqrt((xb - xa)^2 + (yb - ya)^2)
+- Diện tích tam giác có độ dài 3 cạnh a, b, c (Heron): S = sqrt(p * (p - a) * (p - b) * (p - c)) với p = (a + b + c) / 2
+Yêu cầu sử dụng kiểu dữ liệu có cấu trúc:
+struct Point {
+    int x;
+    int y;
+};
+struct Triangle {
+    Point A;
+    Point B;
+    Point C;
+};
+Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập số nguyên dương n, nhập tọa độ các đỉnh của mỗi tam giác T[i] với i = 0..n-1.
+b. Đếm xem trong dãy n tam giác trên có bao nhiêu tam giác mà cả ba đỉnh của nó đều thuộc về góc phần tư thứ nhất (hoành độ > 0 và tung độ > 0).
+c. Tính tổng diện tích của n tam giác trên.
+   Ví dụ: n = 5
+   -4 -1 -3 -3 -2 -1
+    2  1  4  3  5  1
+   -1  4  0  1  1  4
+    2 -5  2 -3  3 -5
+    4  5  7  7  9  5
+   - Kết quả câu b: 2
+   - Kết quả câu c: 14
+
+Câu 3. (2,0 điểm)
+a. Viết hàm đệ quy đếm số lượng chữ số chẵn của một số nguyên dương n.
+   Ví dụ: n = 2026 thì kết quả là 4.
+b. Hệ số nhị thức (số tổ hợp) C(n, k) được định nghĩa như sau:
+   - C(n, 0) = 1, C(n, n) = 1 với mọi n >= 0;
+   - C(n, k) = C(n-1, k-1) + C(n-1, k) với 0 < k < n.
+   Viết hàm đệ quy tính hệ số nhị thức C(n, k) theo định nghĩa trên.
+   Ví dụ: n = 5, k = 3 thì C(5, 3) = 10.
+
+Câu 4. (2,0 điểm)
+Cho chuỗi s chỉ chứa các ký tự chữ cái và ký tự khoảng trắng. Giả thiết đầu chuỗi, cuối chuỗi và giữa các từ có thể có một hoặc nhiều ký tự khoảng trắng.
+a. Viết hàm đếm số lượng ký tự của mỗi từ trong chuỗi.
+b. Viết hàm tìm một từ dài nhất.
+   Ví dụ: chuỗi s là "   programming   is   an   art   "
+   - Kết quả câu a: 11 2 2 3
+   - Kết quả câu b: "programming"
+
+Câu 5. (2,0 điểm)
+Cho tập tin văn bản table_in.txt có cấu trúc như sau:
+- Dòng đầu chứa hai số nguyên dương m, n.
+- Trong m dòng tiếp theo, mỗi dòng chứa n số nguyên.
+Viết chương trình thực hiện các yêu cầu sau:
+a. Đọc dữ liệu từ tập tin table_in.txt vào mảng hai chiều, trong đó chỉ số dòng, chỉ số cột của mảng bắt đầu từ 1 (gọi mảng này là bảng số).
+b. Tìm giá trị lớn nhất (MAX) của bảng số, tìm giá trị nhỏ nhất (MIN) của bảng số. Cho biết vị trí (chỉ số dòng, chỉ số cột) các phần tử của bảng số có giá trị bằng MAX hoặc bằng MIN.
+c. Thay thế các phần tử có giá trị MAX và các phần tử có giá trị MIN của bảng số bằng giá trị (MAX + MIN) / 2 (lấy phần nguyên). Tính trung bình cộng các phần tử của bảng số sau khi thay thế.
+Ghi kết quả vào file table_out.txt theo cấu trúc ví dụ sau:
+   Ví dụ:
+   [table_in.txt]
+   4 5
+   13 19 10  5 15
+   11  3 16  3  5
+    4 18 12  2 14
+    2 17 19 15  2
+
+   [table_out.txt]
+   Cau b:
+   19 2
+   1 2; 3 4; 4 1; 4 3; 4 5;
+   Cau c:
+   4 5
+   13 10 10  5 15
+   11  3 16  3  5
+    4 18 12 10 14
+   10 17 10 15 10
+   10.55
