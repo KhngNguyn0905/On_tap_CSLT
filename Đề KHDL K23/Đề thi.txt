@@ -1,0 +1,85 @@
+TRƯỜNG ĐẠI HỌC SÀI GÒN
+ĐỀ THI SỐ 1
+
+ĐỀ THI KẾT THÚC HỌC PHẦN
+Học phần: Cơ sở lập trình
+Mã học phần: 858009
+Thời gian làm bài: 90 phút, không kể thời gian phát đề
+
+Học kì: 1
+Năm học: 2024 - 2025
+Trình độ đào tạo: Đại học
+Hình thức đào tạo: Chính quy
+Họ tên sinh viên: ..................................................
+Mã số sinh viên: ..............................
+
+Sinh viên KHÔNG sử dụng tài liệu.
+
+----------------------------------------------------------------------
+
+Câu 1. (2,0 điểm)
+a. Cho một số nguyên dương n, hãy viết hàm tính tổng các chữ số của n.
+Ví dụ n=2025 thì hàm trả về giá trị 9.
+b. Cho số nguyên dương n, hãy viết hàm kiểm tra xem n có phải là số nguyên tố hay không ?
+Nếu n là số nguyên tố thì hàm trả về giá trị 1, nếu n không phải là số nguyên tố thì hàm trả về giá trị 0.
+
+Câu 2. (2,0 điểm)
+Cho mảng hai chiều a chứa m dòng n cột các số nguyên; trong đó vị trí dòng, cột bắt đầu từ 0.
+Hãy viết chương trình thực hiện các công việc sau:
+a. Tính tổng các phần tử của mảng a.
+b. Tính tổng các phần tử trên từng dòng của mảng a.
+c. Tính tổng các phần tử trên từng cột của mảng a.
+Ví dụ:
+m=3, n=4
+14   7  16  16
+12  21   9   8
+11   4  13  18
+kết quả câu a: 149
+kết quả câu b: 53 50  46
+kết quả câu c: 37 32  38  42
+
+Câu 3. (2,0 điểm)
+Cho dãy n hình chữ nhật R_0, R_1, ..., R_{n-1}; trong đó mỗi hình chữ nhật biết chiều dài và chiều rộng là các số nguyên dương.
+Cấu trúc mỗi hình chữ nhật được định nghĩa: struct rectangle{int length; int width;};
+Hãy viết chương trình thực hiện các công việc sau:
+a. Nhập n, nhập chiều dài và chiều rộng của mỗi hình chữ nhật R_i với i=0..n-1.
+b. Tính tổng diện tích của n hình chữ nhật trên.
+Ví dụ:
+n=7
+8   9
+6   4
+12  5
+18  12
+10  5
+3   2
+11  4
+kết quả câu b: 472
+
+Câu 4. (2,0 điểm)
+Cho chuỗi s chứa các ký tự chữ cái và ký tự khoảng trắng; giả thiết đầu chuỗi s và cuối chuỗi s không có ký tự khoảng trắng, giữa các từ của chuỗi s có đúng một ký tự khoảng trắng.
+Hãy viết chương trình thực hiện các công việc sau:
+a. Đếm số lượng ký tự mỗi từ.
+b. Tách một từ bên phải của chuỗi.
+Ví dụ:
+Chuỗi s là "The Python programming language is easy to learn and deploy applications"
+kết quả câu a: 3  6  11  8  2  4  2  5  3  6  12
+kết quả câu b: applications
+
+Câu 5. (2,0 điểm)
+Cho một file văn bản num_inp.txt; có cấu trúc như sau:
+-Dòng đầu ghi số n.
+-Dòng tiếp theo ghi n số nguyên a_0, a_1, ..., a_{n-1}; các số cách nhau ít nhất một khoảng trắng.
+Hãy viết chương trình thực hiện các công việc sau:
+a. Đọc dữ liệu từ file num_input.txt và lưu vào biến n và dãy n số nguyên a_0, a_1, ..., a_{n-1}.
+b. Tìm giá trị nhỏ nhất của dãy số a_0, a_1, ..., a_{n-1}.
+c. Ghi kết quả tìm được của câu b vào file văn bản num_output.txt.
+Ví dụ:
+num_inp.txt
+8
+14  23  22  24  6  12  45  15
+num_out.txt
+6
+
+----------------------------------------------------------------------
+Hết
+Cán bộ coi thi không giải thích gì thêm.
