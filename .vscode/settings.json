@@ -1,0 +1,38 @@
+{
+    // 1. Ẩn các file hệ thống & thư mục biên dịch khỏi cây thư mục (Explorer) để không bị sổ ra lung tung
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/*.dSYM": true,
+        "**/*.o": true,
+        "**/*.out": true,
+        "**/*.exe": true,
+        ".build": true,
+        ".vscode": true
+    },
+    "search.exclude": {
+        "**/*.dSYM": true,
+        ".build": true
+    },
+    // 2. Gom gọn các file sinh ra phụ (nếu có) vào dưới file gốc thay vì xổ dài ra
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.cpp": "${capture}.h, ${capture}.hpp, ${capture}.out, ${capture}.exe, ${capture}",
+        "*.c": "${capture}.h, ${capture}.out, ${capture}.exe, ${capture}"
+    },
+    "explorer.compactFolders": true,
+    // 3. Cấu hình Code Runner (nếu dùng nút Run Code) tự động gom file chạy vào .build
+    "code-runner.executorMap": {
+        "cpp": "mkdir -p \"$workspaceRoot/.build\" && clang++ -std=c++20 \"$fullFileName\" -o \"$workspaceRoot/.build/$fileNameWithoutExt\" && \"$workspaceRoot/.build/$fileNameWithoutExt\"",
+        "c": "mkdir -p \"$workspaceRoot/.build\" && clang -std=c17 \"$fullFileName\" -o \"$workspaceRoot/.build/$fileNameWithoutExt\" && \"$workspaceRoot/.build/$fileNameWithoutExt\""
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    // 4. Chuẩn hoá Editor cho C/C++
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "files.autoSave": "off",
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c17"
+}

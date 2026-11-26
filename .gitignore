@@ -1,0 +1,12 @@
+# Bỏ qua các file thực thi không có phần mở rộng (sinh ra khi biên dịch C/C++)
+*
+!*/
+!*.*
+
+# Luôn bỏ qua file hệ thống macOS & thư mục/file biên dịch tạm
+.DS_Store
+.build/
+*.dSYM/
+*.o
+*.out
+*.exe
