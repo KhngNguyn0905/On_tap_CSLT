@@ -11,8 +11,8 @@ m=3, n=4
 12  21   9   8
 11   4  13  18
 kết quả câu a: 149
-kết quả câu b: 53 50  46
-kết quả câu c: 37 32  38  42
+kết quả câu b: 53 50 46
+kết quả câu c: 37 32 38 42
 */
 #include <iostream>
 using namespace std;
